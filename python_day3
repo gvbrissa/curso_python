@@ -1,0 +1,57 @@
+# print("Welcome to Python Pizza Deliveries!")
+# size = input("What size pizza do you want? S, M or L:")
+# pepperoni = input("Do you want pepperoni on your pizza? Y or N:")
+# extra_cheese = input("Do you want extra cheese? Y or N:")
+# total_bill = 0
+
+# # Size
+# if size == "S":
+#     total_bill += 15
+# elif size == "M":
+#     total_bill += 20
+# elif size == "L":
+#     total_bill += 25
+# else:
+#     print("You typed the wrong inputs")
+
+# # Pepperoni
+# if pepperoni == "Y":
+#     if size == "S":
+#         total_bill += 2
+#     else:
+#         total_bill += 3
+# else:
+#     total_bill += 0
+
+# # extra cheese
+# if extra_cheese == "Y":
+#     total_bill += 1
+# else:
+#     total_bill += 0
+
+# print(f"Your final bill is ${total_bill}")
+
+print("Welcome to Treasure Island")
+print("Your mission is to find the trasure")
+print("You're at a cross road. Where do you want to go?")
+direction = input('Type "left" or "right"\n')
+if direction == "left":
+    print("You've come to a lake. There is an island in the middle of the lake")
+
+    action = input('Type "wait" to wait for a boat. Type "swim" to swim across\n')
+    if action == "swim":
+        print("You found three diferents doors")
+
+        door = input("Type which one do you choose? yellow, red or blue\n")
+        if door == "yellow":
+            print("You found the treasure. Congrats!")
+        elif door == "red":
+            print("When you open the door it starts on fire. Game over")
+        else:
+            print("The door does not open. Game over")
+
+    else:
+        print("The boat never arrive. Game over")
+
+else:
+    print("You fell in to a hold. Game over")
